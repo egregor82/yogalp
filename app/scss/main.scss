@@ -1,10 +1,12 @@
 @import "vars";
+@import "fonts";
+@import "header";
 
 body {
-	font-size: 16px;
+	font-size: 14px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 1.5;
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
@@ -19,4 +21,27 @@ body {
 	}
 }
 
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+p{
+	margin: 0;
+}
+.wrapper{
+	max-width: 1920px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.section-wrapper{
+	padding: 120px 0;
+}
+
+.to-uppercase{
+	text-transform: uppercase;
+}
 @import "media"; // Always at the end

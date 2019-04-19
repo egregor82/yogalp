@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
@@ -20,47 +21,139 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<!--Fonts End-->
 	<link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
-		<header class="main-header">
-				<nav class="main-nav wrapper">
-					<a href="#about_us" class="header-link active">About Us</a>
-					<a href="#reservation" class="header-link">Reservation</a>
-					<a href="#gallery" class="header-link">Gallery</a>
-					<div class="header-logo-block">
-						<img src="img/header/yogalogo.png" alt="yogalogo">
-						<p class="header-p to-uppercase">yoga</p>
+	<!--Handlebars script start-->
+	<script id="Handle-template-gallery" type="text/x-handlebars-template">
+		{{#each gallery}}
+		<div class="img-block">
+			<a class="gallery-img" href="{{path}}"
+				data-lightbox="gallery-set" data-title="{{alt}}"><img class="gallery-image"
+					src="{{srcpath}}" alt="{{alt}}" />
+					<div class="zoom-img">
+							<img src="img/gallery/search_logo.png" alt="yogalogo">
 					</div>
-					<a href="#blog" class="header-link">Blog</a>
-					<a href="#elements" class="header-link">Elements</a>
-					<a href="#shop" class="header-link">Shop</a>
-				</nav>
-			</header>
-			<main>
-				<section class="reservation section-wrapper">
-					<div class="wrapper reservation-block">
-						<div class="register-form">
-							<h2 class="register-form-header">Trial Class</h2>
-							<form action="" method="post" id="yoga-class">
-								<input type="text" name="name" class="register-input" form="yoga-class" required placeholder="Enter your name">
-								<input type="tel" name="tel" class="register-input" form="yoga-class" required placeholder="Enter your phone">
-								<select name="class" form="yoga-class" required class="register-select">
-									<option disabled hidden selected>Chose your class</option>
-									<option>Yoga for health</option>
-									<option>Yoga for lose weight</option>
-									<option>Yoga for children</option>
-									<option>Yoga for elderly</option>
-								</select>
-								<input type="submit" value="Try it" class="reservation-btn">
-							</form>
+			</a>
+			
+		</div>
+		{{/each}}
+	</script>
+	<!--Handlebars script end-->
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-nav wrapper">
+			<a href="#about_us" class="header-link scroll active">About Us</a>
+			<a href="#reservation" class="header-link scroll">Reservation</a>
+			<a href="#gallery" class="header-link scroll">Gallery</a>
+			<div class="header-logo-block">
+				<img src="img/header/yogalogo.png" alt="yogalogo">
+				<p class="header-p to-uppercase">yoga</p>
+			</div>
+			<a href="#blog" class="header-link scroll">Blog</a>
+			<a href="#elements" class="header-link scroll">Elements</a>
+			<a href="#shop" class="header-link scroll">Shop</a>
+		</nav>
+	</header>
+	<main>
+		<section class="reservation section-wrapper" id="reservation">
+			<div class="wrapper reservation-block">
+				<div class="register-form">
+					<h2 class="register-form-header">Trial Class</h2>
+					<form action="" method="post" id="yoga-class">
+						<input type="text" name="name" class="register-input" form="yoga-class" required
+							placeholder="Enter your name">
+						<input type="tel" name="tel" class="register-input" form="yoga-class" required
+							placeholder="Enter your phone">
+						<select name="class" form="yoga-class" required class="register-select">
+							<option disabled hidden selected>Chose your class</option>
+							<option>Yoga for health</option>
+							<option>Yoga for lose weight</option>
+							<option>Yoga for children</option>
+							<option>Yoga for elderly</option>
+						</select>
+						<input type="submit" value="Try it" class="reservation-btn">
+					</form>
+				</div>
+				<div class="reservation-header">
+					<h1 class="reservation-main-header">Just Balance your Mind & Body </h1>
+					<p>Create the healthy living <br> for yourself</p>
+				</div>
+			</div>
+		</section>
+		<section class="feature-program-section section-wrapper">
+			<div class="wrapper">
+				<div class="feature-program-header">
+					<h3 class="section-header to-uppercase">Yoga feature program</h3>
+					<p>Our Classes</p>
+				</div>
+				<div class="feature-program-wrapper">
+					<div class="feature-program-block">
+						<div class="feature-program-img">
+							<img src="img/futured_program/yoga_for_health.png" alt="health yoga">
 						</div>
-						<div class="reservation-header">
-								<h1 class="reservation-main-header">Just Balance your Mind & Body </h1>
-								<p>Create the healthy living <br> for yourself</p>
+						<div class="program-content">
+							<h4 class="program-content-header to-uppercase">
+								yoga for health
+							</h4>
+							<p class="program-content-text">Minim veniam, quis nostrud exercitation ullamco laboris nisi
+								ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt.</p>
+							<p class="yoga-system">Ashtanga - Hatha</p>
 						</div>
+					</div>
+					<div class="feature-program-block">
+						<div class="feature-program-img">
+							<img src="img/futured_program/yoga_lose_weight.png" alt="health yoga">
 						</div>
-				</section>
-			</main>
+						<div class="program-content">
+							<h4 class="program-content-header to-uppercase">
+								yoga for lose weight
+							</h4>
+							<p class="program-content-text">Minim veniam, quis nostrud exercitation ullamco laboris nisi
+								ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt.</p>
+							<p class="yoga-system">Ashtanga - Hatha</p>
+						</div>
+					</div>
+					<div class="feature-program-block">
+						<div class="feature-program-img">
+							<img src="img/futured_program/yoga_for_children.png" alt="health yoga">
+						</div>
+						<div class="program-content">
+							<h4 class="program-content-header to-uppercase">
+								yoga for children
+							</h4>
+							<p class="program-content-text">Minim veniam, quis nostrud exercitation ullamco laboris nisi
+								ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt.</p>
+							<p class="yoga-system">Ashtanga - Hatha</p>
+						</div>
+					</div>
+					<div class="feature-program-block">
+						<div class="feature-program-img">
+							<img src="img/futured_program/yoga_for_elderly.png" alt="health yoga">
+						</div>
+						<div class="program-content">
+							<h4 class="program-content-header to-uppercase">
+								yoga for elderly
+							</h4>
+							<p class="program-content-text">Minim veniam, quis nostrud exercitation ullamco laboris nisi
+								ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt.</p>
+							<p class="yoga-system">Ashtanga - Hatha</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="gallery" id="gallery">
+			<div class="gallery-img-wrapper" id="gallery-img-wrapper">
+
+			</div>
+		</section>
+	</main>
 	<script src="js/scripts.min.js"></script>
 </body>
+
 </html>

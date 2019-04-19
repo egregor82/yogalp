@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "header";
+@import "mainpage";
 
 body {
 	font-size: 14px;
@@ -27,12 +28,15 @@ a{
 		text-decoration: none;
 	}
 }
-
-p{
+input, select{
+	outline: 0;
+    border-style: none;
+}
+*{
 	margin: 0;
 }
 .wrapper{
-	max-width: 1920px;
+	max-width: 1175px;
 	padding: 0 15px;
 	margin: 0 auto;
 }

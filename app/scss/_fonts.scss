@@ -1,4 +1,4 @@
 @import "_mixins/font-face";
 
-@include font-face("FreestyleScript", "../fonts/freestylescript/freestyle");
-@include font-face("Champagne & Limousines", "../fonts/champagnelimousines/Champagne_Limousines");
+@include font-face('Freestyle Script', "../fonts/freestylescript/freestyle");
+@include font-face('Champagne & Limousines', "../fonts/champagnelimousines/Champagne_Limousines");

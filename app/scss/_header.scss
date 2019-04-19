@@ -6,6 +6,7 @@
     height: 100px;
     z-index: 1000;
     background-color: $white;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15); 
 }
 
 .main-nav{
@@ -40,6 +41,7 @@
     color: $blue;
     line-height: 1;
     padding: 0 135px;
+    font-family: 'Champagne & Limousines', sans-serif;
     img{
         height: 43px;
         width: 100%;

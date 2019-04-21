@@ -25,9 +25,9 @@
     &:hover{
         color: $blue;
         &:after{
-            content: "";
+            content: '';
             position: absolute;
-            width: 33.33%;
+            width: 30px;
             left: 50%;
             transform: translateX(-50%);
             bottom: -6px;

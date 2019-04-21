@@ -18,6 +18,14 @@ lightbox.option({
 	'showImageNumberLabel': false
 })
 // Light block end
+//Slick slider start
+$('.slick-slider').slick({
+  	infinite: true,
+	arrows: true,
+	slidesToShow: 1,
+  	slidesToScroll: 1,
+});
+//Slick slider end
 });
 
 //Handlebars template start

@@ -40,6 +40,7 @@ gulp.task('scripts', function() {
 		'app/libs/easing/jquery.easing.1.3.js',
 		'app/libs/lightbox/js/lightbox.min.js',
 		'app/libs/handelbars/handlebars.min-v4.1.1.js',
+		'app/libs/slick/js/slick.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

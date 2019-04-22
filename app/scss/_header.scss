@@ -7,6 +7,9 @@
     z-index: 1000;
     background-color: $white;
     box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15); 
+    @media screen and (max-width: 576px) {
+        height: 50px;
+    }
 }
 
 .main-nav{
@@ -22,6 +25,9 @@
     padding: 0 15px;
     position: relative;
     white-space: nowrap;
+    @media screen and (max-width: 576px) {
+        padding: 0 5px;
+    }
     &:hover{
         color: $blue;
         &:after{
@@ -58,5 +64,11 @@
     img{
         height: 43px;
         width: 100%;
+    }
+    @media screen and (max-width: 992px) {
+        padding: 0 15px;
+    }
+    @media screen and (max-width: 576px) {
+        display: none;
     }
 }

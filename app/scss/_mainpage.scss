@@ -6,6 +6,9 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width: 576px) {
+        margin-top: 50px;
+    }
     &:after{
         content: '';
         position: absolute;
@@ -24,6 +27,9 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    @media screen and (max-width: 992px) {
+        flex-flow: column-reverse;
+    }
 }
 
 ::-webkit-input-placeholder {color:#969696;}
@@ -40,7 +46,10 @@
     padding: 35px;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15); 
     border-radius: 20px;
-    
+    @media screen and (max-width: 992px) {
+        margin-right: 0;
+        margin-top: 15px;
+    }
     input, select{
         display: block;
         width: 100%;
@@ -71,6 +80,10 @@
         width: 170px;
         margin: 0;
         float: right;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
     }
    }
    .register-form-header{
@@ -86,7 +99,15 @@
        font-family: $fss-font;
        font-size: 40px;
        line-height: 1.2;
+       max-width: 300px;
    }
+   @media screen and (max-width: 992px) {
+       text-align: center;
+    max-width: 100%;
+    p{
+        max-width: 100%;
+    }
+}
 }
 .reservation-main-header{
     font-weight: 700;
@@ -95,9 +116,7 @@
 //reservation section end
 
 //feature program section start
-.feature-program-section{
-    margin-top: -73px;
-}
+
 .feature-program-header{
     text-align: center;
     margin-bottom: 50px;
@@ -124,19 +143,24 @@
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 15px 15px;
+    @media screen and (max-width: 576px) {
+		max-width: 100%;
+	}
 }
 .feature-program-img{
-    img{
-        display: block;
-        border-radius: 8px 0 0 8px;
-        width: 270px;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+    border-radius: 8px 0 0 8px;
+    min-width: 270px;
+    overflow: hidden;
+    @media screen and (max-width: 576px) {
+        min-width: 150px;
     }
 }
 .program-content{
+    -ms-flex: 0 1 auto;
     padding: 50px 30px;
+    @media screen and (max-width: 576px) {
+		padding: 15px 15px;
+	}
 }
 
 .program-content-header{
@@ -144,9 +168,13 @@
     font-weight: 700;
     white-space: nowrap; 
     margin-bottom: 20px;
+    @media screen and (max-width: 576px) {
+		white-space: normal;
+	}
 }
 .program-content-text{
     display: inline-block;
+    -ms-flex: 0 1 auto;
 }
 .yoga-system{
     margin-top: 12px;
@@ -160,21 +188,27 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    //margin: 0 auto;
-    
+    justify-content: center;   
 }
 .img-block{
     position: relative;
     width: 25%;
     height: 350px;
+    @media screen and (max-width: 992px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 .gallery-img{
     &:hover{
-        .gallery-image{
+        div:not(.zoom-img){
             -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
             filter: grayscale(100%);
+            border: 0px;
         }
         .zoom-img{
             display: block;
@@ -200,6 +234,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        border: 0px;
     }
     
 .zoom-img{
@@ -213,24 +248,27 @@
     border-radius: 50%;
     width: 57px;
     height: 57px;
-    img{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    } 
+    background-image: url('../img/gallery/search_logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
 } 
 //gallery section end
 
 //about us section start
 .about-us-container{
    display: flex;
-   //float: left;
+   @media screen and (max-width: 992px) {
+    flex-flow: wrap;
+}
 }
 .about-us-info{
     display: inline-block;
    width: 50%;
     margin-right: 100px;
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        margin-right: 0;
+    }
     .section-header{
         margin: 25px 0;
     }
@@ -241,6 +279,10 @@
     height: 300px;
     box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
+    @media screen and (max-width: 992px) {
+        margin-top: 15px;
+        width: 100%;
+    }
     .slick-next, .slick-prev{
         width: 50px;
         height: 50px;
@@ -250,25 +292,24 @@
         background-image: url('../img/about-us/arrow-prev.png');
         background-repeat: no-repeat;
         background-position: 17px center;
+        @media screen and (max-width: 576px) {
+            left: 0;
+        }
     }
     .slick-next{
         right: -25px;
         background-image: url('../img/about-us/arrow-next.png');
         background-repeat: no-repeat;
         background-position: 20px center;
+        @media screen and (max-width: 576px) {
+            right: 0;
+        }
     }
-   // margin: 0 auto;
 }
 
 .slider-img{
     border-radius: 8px;
     overflow: hidden;
-    img{
-	    height: 300px;
-        width: 100%;
-        object-fit: cover;
-        object-position: bottom;
-    }
 }
   
 //slider start
@@ -343,9 +384,8 @@
 .background-lotos{
     position: relative;
     background-image: url('../img/bg/lotos.png');
-    background-position: right bottom;
+    background-position: right 120%;
     background-repeat: no-repeat;
-    //background-size: cover;
 }
 
 //shop section start
@@ -366,7 +406,11 @@
     box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: $white;
+    @media screen and (max-width: 576px) {
+        min-width: 290px;
+    }
 }
+
 .price-per-month{
     background-color: $blue;
     color: $white;
@@ -396,7 +440,6 @@
 .shop-items{
     font-size: 18px;
     color: #555;
-   // text-align: center;
     p{
         padding-top: 43px;
         position: relative; 
@@ -424,9 +467,10 @@
     height: 50px;
     min-width: 170px;
     margin: 50px 0;
-    &:hover{
-        opacity: .8;
-    }
+}
+
+.highlight-block{
+    opacity: .8;
 }
 //shop section end
 //blog section start
@@ -437,13 +481,16 @@
 .blog-slider{
     box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-   // overflow: hidden;
+    
     .slick-dots{
         position: absolute;
         right: 0;
         top: 50%;
         transform: translate(60px, -50%);
         list-style-type: none;
+        @media screen and (max-width: 992px) {
+            display: none !important;
+        }
         li {
             position: relative;
             height: 20px;
@@ -505,20 +552,47 @@
     background-color: $white;
     overflow: hidden;
     border-radius: 8px;
-    img {
+    @media screen and (max-width: 992px) {
+        flex-flow: wrap;
+        justify-content: center;
+        padding: 15px;
+	}
+    .blog-img-container{
+        border: 2px solid $white;
         border-radius: 50%;
-        width: 125px;
-        height: 125px;
-        object-fit: cover;
-        object-position: top;
-        box-shadow: 0 0 0 2px #d7d7d7;
-        border: 10px solid $white;
+        margin-right: 10px;
+        display: block;
         margin-right: 40px;
+        div{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                width: 145px;
+                height: 145px;
+                box-shadow: 0 0 0 2px #d7d7d7;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+    }
+    
+      .blog-text-container{
+        -ms-flex: 0 1 auto;
       }
       .blog-main-text{
           color: #555;
           padding-left: 40px;
           position: relative;
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            max-width: 690px;
+       }
           &:before{
               content: '“';
               position: absolute;
@@ -536,6 +610,9 @@
               transform: translate(200%, 50%);
                 color: $blue;
                 font-size: 60px;
+                @media screen and (max-width: 992px) {
+                    transform: translate(0, 50%);
+                }
           }
       }
 }
@@ -543,6 +620,12 @@
     padding-left: 40px;
     border-left: 2px solid #d7d7d7;
     padding-top: 35px;
+    @media screen and (max-width: 992px) {
+       border: none;
+       text-align: center;
+       padding-top: 15px;
+       padding-bottom: 35px;
+    }
     .full-name{
         font-size: 18px;
         font-weight: 700;
@@ -553,6 +636,13 @@
 .blog-nav{
     transform: translate(310px, -50%);
     max-width: 200px;
+    @media screen and (max-width: 992px) {
+        position: absolute;
+        max-width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+     }
     .slick-next, .slick-prev{
         width: 30px;
         height: 30px;
@@ -562,38 +652,43 @@
         background-image: url('../img/blog/prev-arrow.png');
         background-repeat: no-repeat;
         background-position: 11px center;
+        @media screen and (max-width: 992px){
+            left: 15px;
+        }
     }
     .slick-next{
         right: -70px;
         background-image: url('../img/blog/next-arrow.png');
         background-repeat: no-repeat;
         background-position: 13px center;
+        @media screen and (max-width: 992px){
+            right: 15px;
+        }
     }
 }
 .blog-nav-container{
     display: flex !important;
     align-items: center;
-    position: relative;
-    z-index: 1;
     justify-content: center;
-    span{
-        border: 2px solid #d7d7d7;
+    .blog-nav-img-container{
         border-radius: 50%;
         margin-right: 10px;
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            background-image: url('../img/blog/trainer1.png');
-            background-size: cover;
-            background-position: center top;
-         }
-        img{
-            border-radius: 50%;
-            width: 61px;
-            height: 61px;
-            object-fit: cover;
-            object-position: top;
-            border: 3px solid $white;
+        div{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                width: 69px;
+                height: 69px;
+                box-shadow: 0 0 0 2px #d7d7d7;
+            }
         }
     }
+    
     
     .nav-full-name{
         font-weight: 700;

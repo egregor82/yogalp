@@ -15,15 +15,6 @@ body {
 	color: $text;
 }
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
-}
-
 a{
 	text-decoration: none;
 	&:hover{
@@ -45,6 +36,9 @@ input, select{
 
 .section-wrapper{
 	padding: 120px 0;
+	@media screen and (max-width: 576px) {
+		padding: 50px 0;
+	}
 }
 
 .to-uppercase{

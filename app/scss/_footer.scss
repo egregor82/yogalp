@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     color: $white;
     margin: 0 -15px;
+    @media screen and (max-width: 576px) {
+        text-align: center;
+    }
 }
 .copyright-container{
     padding: 40px 0;
@@ -20,6 +23,9 @@
     margin: 15px;
     p{
         padding: 60px 130px 60px 0;
+        @media screen and (max-width: 576px) {
+            padding: 60px  0;
+        }
     }
 }
 .main-footer-header{
@@ -39,6 +45,7 @@
             height: 21px;
             width: auto;
             transition: all .3s linear;
+            border: 0px;
             &:hover{
                 height: 30px;
             }
@@ -59,6 +66,7 @@
     display: flex;
     width: 190px;
     margin: 15px;
+    flex-grow: 1;
     img{
         padding-right: 15px;
         height: 21px;
@@ -66,10 +74,19 @@
         &.top{
             transform: translateY(25%);
         }
+        &.mail{
+            height: 16px;
+            transform: translateY(25%);
+        }
     }
     a{
         text-decoration: none;
         color: inherit;
         display: block;
+    }
+    @media screen and (max-width: 576px) {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
     }
 }

@@ -56,6 +56,12 @@
             color: #969696;
            padding: 0 4px;
        }
+       &.correct-input{
+           box-shadow: 0 0 0 1px green;
+       }
+       &.incorrect-input{
+        box-shadow: 0 0 0 1px red;;
+       }
     }
 
     .reservation-btn{
@@ -546,7 +552,7 @@
 
 .blog-nav{
     transform: translate(310px, -50%);
-    max-width: 190px;
+    max-width: 200px;
     .slick-next, .slick-prev{
         width: 30px;
         height: 30px;
@@ -574,8 +580,12 @@
         border: 2px solid #d7d7d7;
         border-radius: 50%;
         margin-right: 10px;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            background-image: url('../img/blog/trainer1.png');
+            background-size: cover;
+            background-position: center top;
+         }
         img{
-            position: relative;
             border-radius: 50%;
             width: 61px;
             height: 61px;

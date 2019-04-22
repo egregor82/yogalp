@@ -18,7 +18,8 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 	<!--Fonts Start-->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">	<!--Fonts End-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+	<!--Fonts End-->
 	<link rel="stylesheet" href="css/main.min.css">
 	<!--Handlebars script start-->
 	<script id="Handle-template-gallery" type="text/x-handlebars-template">
@@ -59,11 +60,11 @@
 				<div class="register-form">
 					<h2 class="register-form-header">Trial Class</h2>
 					<form action="" method="post" id="yoga-class">
-						<input type="text" name="name" class="register-input" form="yoga-class" required
+						<input type="text" name="name" class="register-input" id="user-name" form="yoga-class" required
 							placeholder="Enter your name">
-						<input type="tel" name="tel" class="register-input" form="yoga-class" required
+						<input type="tel" name="tel" class="register-input" id="telephone" form="yoga-class" required
 							placeholder="Enter your phone">
-						<select name="class" form="yoga-class" required class="register-select">
+						<select id="yoga-class-type" name="class" form="yoga-class" required class="register-select">
 							<option disabled hidden selected>Chose your class</option>
 							<option>Yoga for health</option>
 							<option>Yoga for lose weight</option>
@@ -154,24 +155,25 @@
 		<section class="about-us section-wrapper" id="about_us">
 			<div class="wrapper">
 				<div class="about-us-container">
-						<div class="about-us-info">
-								<h3 class="section-header to-uppercase">About us</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate
-									velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
-							</div>
-							<div class="about-us-slider">
-								<div class="slider-img">
-									<img src="img/about-us/img.jpg" alt="">
-								</div>
-								<div class="slider-img">
-									<img src="img/about-us/img1.png" alt="">
-								</div>
-								<div class="slider-img">
-									<img src="img/about-us/img1.png" alt="">
-								</div>
-							</div>
+					<div class="about-us-info">
+						<h3 class="section-header to-uppercase">About us</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui
+							ullamcomi
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
+					</div>
+					<div class="about-us-slider">
+						<div class="slider-img">
+							<img src="img/about-us/img.jpg" alt="">
+						</div>
+						<div class="slider-img">
+							<img src="img/about-us/img1.png" alt="">
+						</div>
+						<div class="slider-img">
+							<img src="img/about-us/img1.png" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -181,42 +183,50 @@
 					<div class="element-wrapper">
 						<img src="img/elements/feature-1.png" alt="feature-1">
 						<h4 class="element-header to-uppercase">improved overall health</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-2.png" alt="feature-2">
 						<h4 class="element-header to-uppercase">increased concentration</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-3.png" alt="feature-3">
 						<h4 class="element-header to-uppercase">blance your mind</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-4.png" alt="feature-4">
 						<h4 class="element-header to-uppercase">sleep better</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-5.png" alt="feature-5">
 						<h4 class="element-header to-uppercase">weight loss</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-6.png" alt="feature-6">
 						<h4 class="element-header to-uppercase">strengthens your bones</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-7.png" alt="feature-7">
 						<h4 class="element-header to-uppercase">increased flexibility</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 					<div class="element-wrapper">
 						<img src="img/elements/feature-8.png" alt="feature-8">
 						<h4 class="element-header to-uppercase">lower blood pressure</h4>
-						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+						<p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+							com.</p>
 					</div>
 				</div>
 			</div>
@@ -226,35 +236,35 @@
 				<div class="wrapper">
 					<div class="shop-block-wrapper">
 						<div class="shop-block">
-								<div class="price-per-month">
-										<div class="currency">
-												<p>$</p>
-											</div>
-											<div class="price">
-												<p>49</p>
-											</div>
-											<div class="month">
-												<p>/month</p>
-											</div>
+							<div class="price-per-month">
+								<div class="currency">
+									<p>$</p>
 								</div>
-								<div class="shop-items">
-									<p class="to-uppercase">Entry date: Mon-Fri</p>
-									<p class="to-uppercase">Entry time: 8a.m - 8p.m</p>
-									<p class="to-uppercase last-p">nutrition advicer: no</p>
+								<div class="price">
+									<p>49</p>
 								</div>
-								<button class="buy-btn" type="submit">Buy now</button>
+								<div class="month">
+									<p>/month</p>
+								</div>
+							</div>
+							<div class="shop-items">
+								<p class="to-uppercase">Entry date: Mon-Fri</p>
+								<p class="to-uppercase">Entry time: 8a.m - 8p.m</p>
+								<p class="to-uppercase last-p">nutrition advicer: no</p>
+							</div>
+							<button class="buy-btn" type="submit">Buy now</button>
 						</div>
 						<div class="shop-block">
 							<div class="price-per-month">
-									<div class="currency">
-											<p>$</p>
-										</div>
-										<div class="price">
-											<p>69</p>
-										</div>
-										<div class="month">
-											<p>/month</p>
-										</div>
+								<div class="currency">
+									<p>$</p>
+								</div>
+								<div class="price">
+									<p>69</p>
+								</div>
+								<div class="month">
+									<p>/month</p>
+								</div>
 							</div>
 							<div class="shop-items">
 								<p class="to-uppercase">Entry date: Mon-Fri</p>
@@ -262,26 +272,26 @@
 								<p class="to-uppercase last-p">nutrition advicer: yes</p>
 							</div>
 							<button class="buy-btn" type="submit">Buy now</button>
-					</div>
-					<div class="shop-block">
-						<div class="price-per-month">
+						</div>
+						<div class="shop-block">
+							<div class="price-per-month">
 								<div class="currency">
-										<p>$</p>
-									</div>
-									<div class="price">
-										<p>99</p>
-									</div>
-									<div class="month">
-										<p>/month</p>
-									</div>
+									<p>$</p>
+								</div>
+								<div class="price">
+									<p>99</p>
+								</div>
+								<div class="month">
+									<p>/month</p>
+								</div>
+							</div>
+							<div class="shop-items">
+								<p class="to-uppercase">Entry date: Mon-Sun</p>
+								<p class="to-uppercase">Entry time: 8a.m - 8p.m</p>
+								<p class="to-uppercase last-p">nutrition advicer: yes</p>
+							</div>
+							<button class="buy-btn" type="submit">Buy now</button>
 						</div>
-						<div class="shop-items">
-							<p class="to-uppercase">Entry date: Mon-Sun</p>
-							<p class="to-uppercase">Entry time: 8a.m - 8p.m</p>
-							<p class="to-uppercase last-p">nutrition advicer: yes</p>
-						</div>
-						<button class="buy-btn" type="submit">Buy now</button>
-				</div>
 					</div>
 				</div>
 			</section>
@@ -291,78 +301,141 @@
 						<div class="blog-container">
 							<img src="img/blog/trainer1.png" alt="trainer1">
 							<div class="blog-text-container">
-								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+										minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip
+										ex ea commodo consequat.</i></p>
 								<div class="our-member">
-								<p class="position">Trainer</p>
-								<p class="full-name">Laura Shepard</p>
+									<p class="position">Trainer</p>
+									<p class="full-name">Laura Shepard</p>
 								</div>
 							</div>
 						</div>
 						<div class="blog-container">
 							<img src="img/blog/trainer2.jpg" alt="trainer2">
 							<div class="blog-text-container">
-								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+										minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip
+										ex ea commodo consequat.</i></p>
 								<div class="our-member">
-								<p class="position">Trainer</p>
-								<p class="full-name">John Week</p>
+									<p class="position">Trainer</p>
+									<p class="full-name">John Week</p>
 								</div>
 							</div>
 						</div>
 						<div class="blog-container">
 							<img src="img/blog/trainer3.jpg" alt="trainer3">
 							<div class="blog-text-container">
-								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+										minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip
+										ex ea commodo consequat.</i></p>
 								<div class="our-member">
-								<p class="position">Trainer</p>
-								<p class="full-name">Kim Kardashian</p>
+									<p class="position">Trainer</p>
+									<p class="full-name">Kim Kardashian</p>
 								</div>
 							</div>
 						</div>
 						<div class="blog-container">
 							<img src="img/blog/trainer4.jpg" alt="trainer4">
 							<div class="blog-text-container">
-								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+								<p class="blog-main-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+										minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip
+										ex ea commodo consequat.</i></p>
 								<div class="our-member">
-								<p class="position">Trainer</p>
-								<p class="full-name">Mila Jovovich</p>
+									<p class="position">Trainer</p>
+									<p class="full-name">Mila Jovovich</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="blog-nav slider-nav">
 						<div class="blog-nav-container">
-								<span><img src="img/blog/trainer2.jpg" alt="trainer2"></span>
-								<div class="our-member-nav">
-										<p class="nav-full-name">John Week</p>
-										<p class="nav-position">Trainer</p>
-								</div>
+							<span><img src="img/blog/trainer2.jpg" alt="trainer2"></span>
+							<div class="our-member-nav">
+								<p class="nav-full-name">John Week</p>
+								<p class="nav-position">Trainer</p>
+							</div>
 						</div>
 						<div class="blog-nav-container">
-								<span><img src="img/blog/trainer3.jpg" alt="trainer3"></span>
-								<div class="our-member-nav">
-										<p class="nav-full-name">Kim Kardashian</p>
-										<p class="nav-position">Trainer</p>
-								</div>
+							<span><img src="img/blog/trainer3.jpg" alt="trainer3"></span>
+							<div class="our-member-nav">
+								<p class="nav-full-name">Kim Kardashian</p>
+								<p class="nav-position">Trainer</p>
+							</div>
 						</div>
 						<div class="blog-nav-container">
 							<span><img src="img/blog/trainer4.jpg" alt="trainer4"></span>
 							<div class="our-member-nav">
-									<p class="nav-full-name">Mila Jovovich</p>
-									<p class="nav-position">Trainer</p>
+								<p class="nav-full-name">Mila Jovovich</p>
+								<p class="nav-position">Trainer</p>
 							</div>
-					</div>
-					<div class="blog-nav-container">
-						<span><img src="img/blog/trainer1.png" alt="trainer1"></span>
-						<div class="our-member-nav">
+						</div>
+						<div class="blog-nav-container">
+							<span><img src="img/blog/trainer1.png" alt="trainer1"></span>
+							<div class="our-member-nav">
 								<p class="nav-full-name">Laura Shepard</p>
 								<p class="nav-position">Trainer</p>
+							</div>
 						</div>
-				</div>
 					</div>
 				</div>
 			</section>
 		</section>
 	</main>
+	<footer class="main-footer">
+		<section class="contacts-section">
+			<div class="wrapper">
+				<div class="contacts-container">
+					<div class="footer-about-block">
+						<h3 class="main-footer-header to-uppercase">about</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui
+							ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="main-footer-social-links">
+							<a href="" class="soclink"><img src="img/footer/pinterest.png" alt="pinterest logo"></a>
+							<a href="" class="soclink"><img src="img/footer/twitter.png" alt="twitter logo"></a>
+							<a href="" class="soclink"><img src="img/footer/facebook.png" alt="facebook logo"></a>
+							<a href="" class="soclink"><img src="img/footer/google+.png" alt="g+ logo"></a>
+							<a href="" class="soclink"><img src="img/footer/instagram.png" alt="instagram logo"></a>
+						</div>
+					</div>
+					<div class="contact-block">
+						<h3 class="main-footer-header to-uppercase">contact us</h3>
+						<div class="contact-info-block">
+							<div class="contact-info">
+								<img src="img/footer/placeholder.png" alt="placeholder logo" class="top">
+								<a href="https://www.google.com/maps/@44.9585418,-110.9021704,14z" target="_blank">5419 Joseph Mountains Apt. 716</a>
+							</div>
+							<div class="contact-info">
+									<img src="img/footer/envelope.png" alt="envelope logo">
+									<a href="mailto:joga.info@example.com">joga.info@example.com</a>
+								</div>
+								<div class="contact-info">
+										<img src="img/footer/phone-call.png" alt="phone logo" class="top">
+										<div>
+												<a href="tel:+1 234 567 89">+1 234 567 89</a>
+												<a href="tel:+1 234 678 90">+1 234 678 90</a>
+										</div>
+									</div>
+									<div class="contact-info">
+											<img src="img/footer/planet-earth.png" alt="planet logo">
+											<a href="http://www.example.com" target="_blank">www.example.com</a>
+										</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="copyright-container">
+			<div class="wrapper">
+				<p>Copyright &copy; 2016-2017 Yoga classes</p>
+			</div>
+		</section>
+
+	</footer>
 	<script src="js/scripts.min.js"></script>
 </body>
 

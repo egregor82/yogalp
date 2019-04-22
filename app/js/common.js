@@ -19,12 +19,27 @@ lightbox.option({
 })
 // Light block end
 //Slick slider start
-$('.slick-slider').slick({
+$('.about-us-slider').slick({
   	infinite: true,
 	arrows: true,
 	slidesToShow: 1,
   	slidesToScroll: 1,
 });
+$('.slider-for').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	fade: true,
+	asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	asNavFor: '.slider-for',
+	arrows: true,
+	focusOnSelect: true
+  });
 //Slick slider end
 });
 
